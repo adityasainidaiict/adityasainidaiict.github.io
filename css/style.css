@@ -310,13 +310,13 @@ a.btn:hover{
 /*----start footer content----*/
 #footer{
 	clear:both;
-	margin-top:18px;
-	padding:15px 0 12px 0;
-	height:22px;
+	margin-top:30px;
+	padding:8px 0 8px 0;
+	height:10px;
 	text-align:center;
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
-	line-height:16px;
+	font-size:10px;
+	line-height:14px;
 	background-color:#E4E1DF;
 	border:#7171AE dotted 1px;
 }
