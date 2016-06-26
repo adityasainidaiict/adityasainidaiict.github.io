@@ -1,12 +1,85 @@
 <html>
-    <head><title>
-        About Us
-        </title></head>
-<body>
-    <div style='position:absolute;z-index:0;left:0;top:0;width:100%;height:100%'>
-        <center><b>You know!!!</b></center>
-
-</div>
+<head>
     
-    </body>    
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+
+
+    
+    </head>
+<body>
+<div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ZerodhaB6-56</a>
+    </div>
+    </div></nav></div>
+
+<div class="row">
+  <div class="col-sm-4"><b>What's in the basket</b>
+    <p><h3>
+      <a target="_blank" href = " http://www.hdfcsec.com/stockpicks/201106160710148685141">HDFC SECURITIES</a>
+      
+      </h3>
+     
+      
+      </p>
+    </div>
+  <div class="col-sm-4"><b>Trade Now!</b>
+      <p>
+    <!-- A Kite button will be generated inside this container //-->
+<p id="default-button"> </p>
+
+<!-- The basket will be linked to this element's onClick //-->
+
+
+<!-- Include the plugin //-->
+<script src="https://kite.trade/publisher.js?v=1"></script>
+
+<script>
+// Only run your custom code once KiteConnect has fully initialised.
+// Use KiteConnect.ready() to achieve this.
+KiteConnect.ready(function() {
+    // Initialize a new Kite instance.
+    // You can initialize multiple instances if you need.
+    var kite = new KiteConnect("your_api_key");
+
+    // Add a stock to the basket
+    kite.add({
+        "exchange": "NSE",
+        "tradingsymbol": "INFY",
+        "quantity": 5,
+        "transaction_type": "BUY",
+        "order_type": "MARKET"
+    });
+
+    // Add another stock
+    kite.add({
+        "exchange": "NSE",
+        "tradingsymbol": "SBIN",
+        "quantity": 1,
+        "order_type": "LIMIT",
+        "transaction_type": "SELL",
+        "price": 105
+    });
+
+    // Render the in-built button inside a given target
+    kite.renderButton("#default-button");
+
+    // OR, link the basket to any existing element you want
+    kite.link("#custom-button");
+});
+</script>
+</p>
+    </div>
+  
+    
+    </div>
+</div>
+
+ 
+<script src="https://kite.trade/publisher.js?v=1"></script>
+</body>
 </html>
